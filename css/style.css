@@ -3,8 +3,8 @@
 /* 基本レイアウト ここから↓ */
 @import url(common.css);
 body {
-	background-color: #f3f2e9;
-	color: #5f5039;
+	background-color: #f0dee4;
+	color: #4d0d0d;
 	font-size: 87.5%;
 	line-height: 1.5;
 }
