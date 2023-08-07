@@ -206,14 +206,13 @@ textarea {
 /* 「お問い合わせ」ページ ここまで↑ */
 
 /* ゲーミングブライダル */
-/* 参考リンク：https://www.ccs1981.jp/blog/css%E3%81%A7%E8%89%B2%E3%82%93%E3%81%AA%E3%82%82%E3%81%AE%E3%82%92%E8%99%B9%E8%89%B2%E3%81%AB%E5%85%89%E3%82%89%E3%81%9B%E3%82%8B/ */
 
 #fair{
 	background-color: rgb(20, 20, 20);
 	color: #ffffff;
 }
 
-#gaming,
+.gaming,
 .gaming_box {
 	animation: gaming 2s linear infinite;
 }
@@ -232,47 +231,3 @@ textarea {
 }
 
 /* ゲーミングブライダル ここまで*/
-
-/* ゲーミングブライダルアイキャッチ*/
-
-.watch_gaming {
-	width: 840px;
-	height: 400px;
-	outline: 4px solid white;
-	outline-offset:-4px;
-	background-image: url(../images/7b8e2698a0214802275f540114ac6c07_t.jpg);
-	object-fit:cover;
-	text-decoration: none;
-}
-
-.plus_border {
-	width: 840px;
-	height: 400px;
-	outline: 2px solid white;
-	outline-offset:-8px;
-}
-
-#graphic a{
-	text-decoration: none;
-	text-align: center;
-	animation: gaming 2s linear infinite;
-	text-shadow:1px 1px 0 #fff,-1px -1px 0 #fff,-1px 1px 0 #fff, 1px -1px 0 #fff,0px 1px 0 #fff,0-1px 0 #fff,-1px 0 0 #fff,1px 0 0 #fff;
-}
-
-#graphic a:hover{
-	animation: gaming 2s linear infinite;
-}
-
-.gaming_tex_B {
-	font-size: 65px;
-	font-weight: bolder;
-	padding-top: 140px;
-	margin: 0;
-}
-
-.gaming_tex_M {
-	font-size: 30px;
-	margin: -10px;
-}
-
-/* ゲーミングブライダルアイキャッチ　ここまで*/
