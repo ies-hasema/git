@@ -174,6 +174,11 @@ table tbody tr:nth-child(even) {
 .gallery_box:first-of-type {
 	margin-top: 30px;
 }
+.meatOnBone {
+	width: 180px;
+	height: 150px;
+	object-fit: cover;
+}
 /* 「ブライダルフェア」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
@@ -199,3 +204,30 @@ textarea {
 	overflow-y: scroll;
 }
 /* 「お問い合わせ」ページ ここまで↑ */
+
+/* ゲーミングブライダル */
+
+#fair{
+	background-color: rgb(20, 20, 20);
+	color: #ffffff;
+}
+
+.gaming,
+.gaming_box {
+	animation: gaming 2s linear infinite;
+}
+
+@keyframes gaming {
+	0%{color: Magenta;}
+	33%{color: yellow;}
+	66%{color: Cyan;}
+	100%{color: Magenta;}
+}
+
+.gaming_box figure img{
+	width: 180px;
+	height: 150px;
+	object-fit: cover;
+}
+
+/* ゲーミングブライダル ここまで*/
