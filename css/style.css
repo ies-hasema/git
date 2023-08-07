@@ -202,10 +202,14 @@ textarea {
 
 /* ゲーミングブライダル */
 
+#fair{
+	background-color: rgb(20, 20, 20);
+	color: #ffffff;
+}
+
 .gaming,
 .gaming_box {
 	animation: gaming 2s linear infinite;
-	background-color: black;
 }
 
 @keyframes gaming {
