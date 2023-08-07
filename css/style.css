@@ -212,7 +212,7 @@ textarea {
 	color: #ffffff;
 }
 
-.gaming,
+#gaming,
 .gaming_box {
 	animation: gaming 2s linear infinite;
 }
@@ -231,3 +231,47 @@ textarea {
 }
 
 /* ゲーミングブライダル ここまで*/
+
+/* ゲーミングブライダルアイキャッチ*/
+
+.watch_gaming {
+	width: 840px;
+	height: 400px;
+	outline: 4px solid white;
+	outline-offset:-4px;
+	background-image: url(../images/7b8e2698a0214802275f540114ac6c07_t.jpg);
+	object-fit:cover;
+	text-decoration: none;
+}
+
+.plus_border {
+	width: 840px;
+	height: 400px;
+	outline: 2px solid white;
+	outline-offset:-8px;
+}
+
+#graphic a{
+	text-decoration: none;
+	text-align: center;
+	animation: gaming 2s linear infinite;
+	text-shadow:1px 1px 0 #fff,-1px -1px 0 #fff,-1px 1px 0 #fff, 1px -1px 0 #fff,0px 1px 0 #fff,0-1px 0 #fff,-1px 0 0 #fff,1px 0 0 #fff;
+}
+
+#graphic a:hover{
+	animation: gaming 2s linear infinite;
+}
+
+.gaming_tex_B {
+	font-size: 65px;
+	font-weight: bolder;
+	padding-top: 140px;
+	margin: 0;
+}
+
+.gaming_tex_M {
+	font-size: 30px;
+	margin: -10px;
+}
+
+/* ゲーミングブライダルアイキャッチ　ここまで*/
