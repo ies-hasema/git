@@ -74,7 +74,25 @@ footer {
 	background-repeat: no-repeat, no-repeat;
 	background-position: left top, left bottom;
 }
-.bnr_inner a p img:hover {
+
+.bnr_inner a p.css {
+	display: inline-block;
+  font-weight: 500;
+  font-family: "游明朝", "YuMincho";
+  text-decoration: none;
+  background: linear-gradient(360deg,#b88b43,#d8bd6b) ;
+  color: #FFF;
+  border: solid 2px #fff;
+  border-radius: 5px;
+  width: 216px;
+  height: 60px;
+  font-size: 14px;
+  line-height: 60px;
+  padding-left: 10px;
+  padding-right: auto;
+}
+
+.bnr_inner a p.css:hover {
 	opacity: 0.8;
 }
 #concept #nav_concept a,
