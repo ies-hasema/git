@@ -33,7 +33,7 @@
         <table>
             <thead>
                 <tr>
-                    <td>便利な機能</td>
+                    <th>便利な機能</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,8 +46,20 @@
                 <tr>
                     <td>複数行選択</td><td>shift + alt</td>
                 </tr>
+                <tr>
+                    <td>表の枠線をつけるCSS<br>枠線を重ねて表示するCSS</td>
+                    <td>border: 線の種類 太さ 色;<br>border-collapse: collapse;</td>
+                </tr>
             </tbody>
         </table>
+        <style>
+            table,th,td{
+                border: dashed 1px #777;
+            }
+            table{
+                border-collapse: collapse;
+            }
+        </style>
     </div>
 </body>
 </html>
