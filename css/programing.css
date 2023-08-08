@@ -1,5 +1,62 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
+
+
+.section___ms {
+    margin: 0 auto;
+    height: 10rem;
+}
+
+.section___ms h2 {
+    border-left: 5px solid #fc3003;
+    color: #333;
+    font-size: 24px;
+    padding-left: 10px;
+    margin: 5px auto;
+    font-weight: 300;
+    font-family: 'Handjet', cursive;
+
+}
+
+button {
+    position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*色*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px #d27d00;
+  /* margin-left: 30px; */
+}
+
+button:active {
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.wrapper {
+    margin-left: 15px;
+}
+
+#button {
+    font-family: 'Handjet', cursive;
+}
 body {
     width: 1200px;
     margin: 0 auto;
 }
-
+.btnbtn{
+    width: 200px;
+    background: transparent;
+    border: 0.5px solid rgba(136, 80, 80, 0.1);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 120%;
+    font-weight: bold;
+}
