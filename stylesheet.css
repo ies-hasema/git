@@ -1,0 +1,13 @@
+.section h2 {
+    border-bottom: 2px solid rgb(116, 103, 103)
+}
+.p1 {
+    font-size: 30px;
+    margin: 60px;
+}
+.p2 {
+    font-size: 16px;
+}
+span {
+    color: red;
+}
