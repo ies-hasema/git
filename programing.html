@@ -26,24 +26,7 @@ t    <title>プログラミング復習ページ</title>git
 
 <<<<<<< HEAD
 
-    <div class="section___ms">
-        <h2>OMIKUJI</h2>
-        <script>
-            window.onload = function () {
-                const list = ["大吉(`·⊝·´)", "中吉(๏д๏)", "小吉(꒪ཀ꒪)", "吉(*ﾟ▽ﾟ)ﾉ", "末吉(๑❛ꆚ❛๑)", "凶（๑✧∀✧๑）☀", "大凶(≧▽≦)"];
-                document.getElementById("button").onclick = function () {
-                    var random = Math.floor(Math.random() * list.length);
-                    document.getElementById("result").textContent = list[random];
-                }
-            }
-        </script>
-        <div class="wrapper">
-            <div class="wrapper-button">
-                <button id="button" class="button">PUSH</button>
-            </div>
-            <p id="result"></p>
-        </div>
-    </div>
+    
     <div class="section">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -544,6 +527,29 @@ t    <title>プログラミング復習ページ</title>git
         } );
     </script>
 >>>>>>> 0808test
+
+<div class="section___ms">
+    <h2>OMIKUJI</h2>
+    <script>
+        window.onload = function () {
+            const list = ["大吉(`·⊝·´)", "中吉(๏д๏)", "小吉(꒪ཀ꒪)", "吉(*ﾟ▽ﾟ)ﾉ", "末吉(๑❛ꆚ❛๑)", "凶（๑✧∀✧๑）☀", "大凶(≧▽≦)"];
+            document.getElementById("button").onclick = function () {
+                var random = Math.floor(Math.random() * list.length);
+                document.getElementById("result").textContent = list[random];
+            }
+        }
+    </script>
+    <div class="wrapper">
+        <div class="wrapper-button">
+            <button id="button" class="button">PUSH</button>
+        </div>
+        <p id="result"></p>
+    </div>
+</div>
+
+
+
+
 </body>
 
 </html>
