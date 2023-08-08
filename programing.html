@@ -117,7 +117,7 @@
                     while (new Date() - startMsec < waitMsec);
                 }
                 let y = 0, x = 0;
-                let img = document.querySelector('#gameMain img');
+                let img2 = document.querySelector('#gameMain img');
 
 
                 checkboxArat.addEventListener("click", function () {
@@ -244,9 +244,9 @@
         </div>
 
         <script>
-            let text = document.getElementById("text");
-            let btn = document.getElementById("btn");
-            let img = document.getElementById("img");
+            let text1 = document.getElementById("text");
+            let btn1 = document.getElementById("btn");
+            let img1 = document.getElementById("img");
             btn.addEventListener('click', () => {
                 text.textContent = '台風が来ます';
                 text.setAttribute('style', 'color : red;');
