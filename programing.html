@@ -97,192 +97,193 @@
 <<<<<<< HEAD
 =======
     <br>
-    <div class="section" style="background-color: lightcyan; border: 1px solid black; padding: 20px; display: inline-block; margin-top: 20px; border-radius: 12px;">
+    <div class="section" style="background-color: transparent; padding: 20px; margin-top: 20px; border-radius: 12px;">
         <h2 style="border-bottom: 3px solid lightgray; display: inline-block; padding: 0 10px;">JavaScript 基本構文</h2>
-        <div class="items" style="display: flex; flex-wrap: wrap;">
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- if 文 -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    if (条件式) {
-        trueブロック
-    } else if (条件式) {
-    　次のtrueブロック
-    } else {
-        falseブロック
-    }
 
-    //例
-    let x = 30;
-
-    if (x >= 20) {
-        console.log('変数xは20以上です。');
-    } else if (x >= 10) {
-        console.log('変数xは10以上です。');
-    } else {
-        console.log('変数xは10未満です。');
-    }
-                    </code>
-                </pre>
-            </div>
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- switch 文 -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    switch (式) {
-        case 値1:
-        「式 === 値1」である場合の命令
-            break;
-        case 値2:
-        「式 === 値2」である場合の命令
-            break;
-        default:
-            式の値がすべての値に合致しない場合の命令
-            break;
-    }
+            <div class="items" style="display: flex; flex-wrap: wrap;">
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- if 文 -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        if (条件式) {
+            trueブロック
+        } else if (条件式) {
+        　次のtrueブロック
+        } else {
+            falseブロック
+        }
     
-    //例
-    let rank = 'B';
-    switch(rank) {
-        case 'A' :
-            console.log('Aランクです。');
-            break;
-        case 'B' :
-            console.log('Bランクです。');
-            break;
-        case 'C' :
-            console.log('Cランクです。');
-            break;
-        default : 
-            console.log('ランク外です。');
-            break;
-    }
+        //例
+        let x = 30;
     
-    //フォールスルーさせる場合
-    switch(rank) {
-        case 'A' :
-        case 'B' :
-        case 'C' :
-            console.log('合格です！');
-            break;
-        default : 
-            console.log('不合格です！');
-            break;
-    }
-                    </code>
-                </pre>
-            </div>
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- for 文 -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    for (初期化式; ループ継続条件式; 増減式) {
-        ループ内で実行する命令
-    }
+        if (x >= 20) {
+            console.log('変数xは20以上です。');
+        } else if (x >= 10) {
+            console.log('変数xは10以上です。');
+        } else {
+            console.log('変数xは10未満です。');
+        }
+                        </code>
+                    </pre>
+                </div>
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- switch 文 -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        switch (式) {
+            case 値1:
+            「式 === 値1」である場合の命令
+                break;
+            case 値2:
+            「式 === 値2」である場合の命令
+                break;
+            default:
+                式の値がすべての値に合致しない場合の命令
+                break;
+        }
+        
+        //例
+        let rank = 'B';
+        switch(rank) {
+            case 'A' :
+                console.log('Aランクです。');
+                break;
+            case 'B' :
+                console.log('Bランクです。');
+                break;
+            case 'C' :
+                console.log('Cランクです。');
+                break;
+            default : 
+                console.log('ランク外です。');
+                break;
+        }
+        
+        //フォールスルーさせる場合
+        switch(rank) {
+            case 'A' :
+            case 'B' :
+            case 'C' :
+                console.log('合格です！');
+                break;
+            default : 
+                console.log('不合格です！');
+                break;
+        }
+                        </code>
+                    </pre>
+                </div>
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- for 文 -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        for (初期化式; ループ継続条件式; 増減式) {
+            ループ内で実行する命令
+        }
+        
+        //配列を取り出すときは、
+        for (let i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+                        </code>
+                    </pre>
+                </div>
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- while 文 -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        while (条件式) {
+            条件がtrueのときの命令
+        }
+        
+        //例
+        let i = 5;
+        while(i < 10) {
+            console.log(`iの値は${i}`);
+            i++;
+        }
+                        </code>
+                    </pre>
+                </div>
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- for in：オブジェクトの中身を取り出す -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        for (仮変数 in オブジェクト名) {
+            ループ内で実行する命令
+        }
+        
+        //例
+        let data = {
+            apple: 150,
+            orange: 100,
+            banana: 120
+        };
+        
+        for (let key in data) {
+            console.log(`${key} = ${data[key]}`);
+        }
+        
+        //結果
+        apple = 150
+        orange = 100
+        banana = 120
+                        </code>
+                    </pre>
+                </div>
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- for of：配列の中身を取り出す -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        for (仮変数 of 配列名) {
+            ループ内で実行する命令
+        }
+        
+        //例
+        let data = ['apple', 'orange', 'banana'];
+        for (let value of data) {
+            console.log(value);
+        }
+        
+        //結果
+        apple
+        orange
+        banana
+                        </code>
+                    </pre>
+                </div>
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- break（一番内側のループを脱出） -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        let k = 1;
+        let result = 0;
+        
+        for (k = 1; k <= 100; k++) {
+            result += k;
+            if (result > 1000) { break; }
+        }
+        
+        console.log(`合計値が1000を超えるのは${k}`);
+                        </code>
+                    </pre>
+                </div>
+                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
+                    <h3>- continue （特定の条件下の周回をスキップ） -</h3>
+                    <pre>
+                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
+        let result = 0;
     
-    //配列を取り出すときは、
-    for (let i = 0; i < array.length; i++) {
-        console.log(array[i]);
-    }
-                    </code>
-                </pre>
-            </div>
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- while 文 -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    while (条件式) {
-        条件がtrueのときの命令
-    }
-    
-    //例
-    let i = 5;
-    while(i < 10) {
-        console.log(`iの値は${i}`);
-        i++;
-    }
-                    </code>
-                </pre>
-            </div>
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- for in：オブジェクトの中身を取り出す -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    for (仮変数 in オブジェクト名) {
-        ループ内で実行する命令
-    }
-    
-    //例
-    let data = {
-        apple: 150,
-        orange: 100,
-        banana: 120
-    };
-    
-    for (let key in data) {
-        console.log(`${key} = ${data[key]}`);
-    }
-    
-    //結果
-    apple = 150
-    orange = 100
-    banana = 120
-                    </code>
-                </pre>
-            </div>
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- for of：配列の中身を取り出す -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    for (仮変数 of 配列名) {
-        ループ内で実行する命令
-    }
-    
-    //例
-    let data = ['apple', 'orange', 'banana'];
-    for (let value of data) {
-        console.log(value);
-    }
-    
-    //結果
-    apple
-    orange
-    banana
-                    </code>
-                </pre>
-            </div>
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- break（一番内側のループを脱出） -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    let k = 1;
-    let result = 0;
-    
-    for (k = 1; k <= 100; k++) {
-        result += k;
-        if (result > 1000) { break; }
-    }
-    
-    console.log(`合計値が1000を超えるのは${k}`);
-                    </code>
-                </pre>
-            </div>
-            <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                <h3>- continue （特定の条件下の周回をスキップ） -</h3>
-                <pre>
-                    <code style="font-size: 18px; line-height: 1.5; font-weight: bold;">
-    let result = 0;
-
-    for (let m = 1; m < 100; m++) {
-        if (m % 2 === 0) { continue; }
-        result += m;
-        console.log(`${result-m} + ${m} = ${result}`);
-    }
-    
-    console.log(`合計：${result}`);
-                    </code>
-                </pre>
-            </div>
+        for (let m = 1; m < 100; m++) {
+            if (m % 2 === 0) { continue; }
+            result += m;
+            console.log(`${result-m} + ${m} = ${result}`);
+        }
+        
+        console.log(`合計：${result}`);
+                        </code>
+                    </pre>
+                </div>
         </div>
     </div>
         <label id="checkboxArat"><p>長谷川ボタン<input type="checkbox"></p></label>
