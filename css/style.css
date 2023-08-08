@@ -247,4 +247,34 @@ textarea {
 =======
 
 /* ゲーミングブライダル ここまで*/
->>>>>>> 7925ffdc2278c092d17fd37a765ab2cf66ad2a6b
+
+/* ぶるぶるボタン */
+
+.buruburu{
+	background-color: #ff0000;
+	width:300px;
+	display:block;
+	margin:0 auto;
+
+}
+.buruburu a{
+	color:#fff;
+	font-size:20px;
+	display:inline-block;
+	padding:10px 20px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.buruburu:hover{
+	animation: hurueru .1s  infinite;
+}
+@keyframes hurueru {
+    0%{transform: translate(0px, 0px) rotateZ(0deg);}
+    25%{transform: translate(2px, 2px) rotateZ(1deg);}
+    50%{transform: translate(0px, 2px) rotateZ(0deg);}
+    75%{transform: translate(2px, 0px) rotateZ(-1deg);}
+    100%{transform: translate(0px, 0px) rotateZ(0deg);}
+}
+
+/* ぶるぶるボタンここまで */
