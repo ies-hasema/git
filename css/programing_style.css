@@ -1,0 +1,28 @@
+#normal_box {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.gaming_hazard {
+	animation: gaming_f 2s linear infinite,
+    gaming_b 1s linear infinite !important;
+}
+
+@keyframes gaming_f {
+	0%{color: Magenta;}
+	33%{color: yellow;}
+	66%{color: Cyan;}
+	100%{color: Magenta;}
+}
+
+@keyframes gaming_b {
+    0%{background-color: Magenta;}
+    33%{background-color: yellow;}
+    66%{background-color: Cyan;}
+    100%{background-color: Magenta;}
+}
