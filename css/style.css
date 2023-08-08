@@ -3,8 +3,12 @@
 /* 基本レイアウト ここから↓ */
 @import url(common.css);
 body {
-	background-color: #f3f2e9;
-	color: #5f5039;
+	background-color: #f0dee4;
+	color: #4d0d0d;
+	background-image: url(../images/ct_20201108-200339480_pudwd.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-size: 87.5%;
 	line-height: 1.5;
 }
@@ -174,6 +178,11 @@ table tbody tr:nth-child(even) {
 .gallery_box:first-of-type {
 	margin-top: 30px;
 }
+.meatOnBone {
+	width: 180px;
+	height: 150px;
+	object-fit: cover;
+}
 /* 「ブライダルフェア」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
@@ -199,3 +208,30 @@ textarea {
 	overflow-y: scroll;
 }
 /* 「お問い合わせ」ページ ここまで↑ */
+
+/* ゲーミングブライダル */
+
+#fair{
+	background-color: rgb(20, 20, 20);
+	color: #ffffff;
+}
+
+.gaming,
+.gaming_box {
+	animation: gaming 2s linear infinite;
+}
+
+@keyframes gaming {
+	0%{color: Magenta;}
+	33%{color: yellow;}
+	66%{color: Cyan;}
+	100%{color: Magenta;}
+}
+
+.gaming_box figure img{
+	width: 180px;
+	height: 150px;
+	object-fit: cover;
+}
+
+/* ゲーミングブライダル ここまで*/
