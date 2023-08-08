@@ -5,9 +5,9 @@
 body {
 	background-color: #f0dee4;
 	color: #4d0d0d;
-	background-image: url(../images/ct_20201108-200339480_pudwd.jpg);
+	background-image: url(../images/bg_h2_head.png);
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: cover;
 	font-size: 87.5%;
 	line-height: 1.5;
@@ -141,24 +141,24 @@ caption p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-table th, table td {
+#plan th, #plan td {
 	padding: 15px;
 	border: 1px solid #6c5f45;
 }
-table tr th:first-child {
+#plan tr th:first-child {
 	width: 70px;
 }
-table tbody th,
-table tbody td {
+#plan tbody th,
+#plan tbody td {
 	vertical-align: top;
 }
-table thead tr th {
+#plan thead tr th {
 	background-color: #eee8cc;
 }
-table tbody tr:nth-child(odd) {
+#plan tbody tr:nth-child(odd) {
 	background-color: #ffffff;
 }
-table tbody tr:nth-child(even) {
+#plan tbody tr:nth-child(even) {
 	background-color: #f4f2f0;
 }
 /* 「プランのご案内」ページ ここまで↑ */
@@ -209,12 +209,13 @@ textarea {
 }
 /* 「お問い合わせ」ページ ここまで↑ */
 
-/* ゲーミングブライダル */
-
-#fair{
-	background-color: rgb(20, 20, 20);
-	color: #ffffff;
+#monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 .gaming,
 .gaming_box {
@@ -235,3 +236,45 @@ textarea {
 }
 
 /* ゲーミングブライダル ここまで*/
+
+.monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
+}
+=======
+>>>>>>> master
+=======
+
+/* ゲーミングブライダル ここまで*/
+
+/* ぶるぶるボタン */
+
+.buruburu{
+	background-color: #ff0000;
+	width:300px;
+	display:block;
+	margin:0 auto;
+
+}
+.buruburu a{
+	color:#fff;
+	font-size:20px;
+	display:inline-block;
+	padding:10px 20px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.buruburu:hover{
+	animation: hurueru .1s  infinite;
+}
+@keyframes hurueru {
+    0%{transform: translate(0px, 0px) rotateZ(0deg);}
+    25%{transform: translate(2px, 2px) rotateZ(1deg);}
+    50%{transform: translate(0px, 2px) rotateZ(0deg);}
+    75%{transform: translate(2px, 0px) rotateZ(-1deg);}
+    100%{transform: translate(0px, 0px) rotateZ(0deg);}
+}
+
+/* ぶるぶるボタンここまで */
