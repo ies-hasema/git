@@ -209,12 +209,13 @@ textarea {
 }
 /* 「お問い合わせ」ページ ここまで↑ */
 
-/* ゲーミングブライダル */
-
-#fair{
-	background-color: rgb(20, 20, 20);
-	color: #ffffff;
+#monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 .gaming,
 .gaming_box {
@@ -235,3 +236,45 @@ textarea {
 }
 
 /* ゲーミングブライダル ここまで*/
+
+.monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
+}
+=======
+>>>>>>> master
+=======
+
+/* ゲーミングブライダル ここまで*/
+
+/* ぶるぶるボタン */
+
+.buruburu{
+	background-color: #ff0000;
+	width:300px;
+	display:block;
+	margin:0 auto;
+
+}
+.buruburu a{
+	color:#fff;
+	font-size:20px;
+	display:inline-block;
+	padding:10px 20px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.buruburu:hover{
+	animation: hurueru .1s  infinite;
+}
+@keyframes hurueru {
+    0%{transform: translate(0px, 0px) rotateZ(0deg);}
+    25%{transform: translate(2px, 2px) rotateZ(1deg);}
+    50%{transform: translate(0px, 2px) rotateZ(0deg);}
+    75%{transform: translate(2px, 0px) rotateZ(-1deg);}
+    100%{transform: translate(0px, 0px) rotateZ(0deg);}
+}
+
+/* ぶるぶるボタンここまで */
