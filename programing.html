@@ -7,9 +7,23 @@
 </head>
 <body>
     <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>
+
     <div class="section">
-        <h2>タイトル</h2>
-        <p>文章文章文章文章文章文章文章文章文章文章文章文章</p>
+        <h2>JavaScript復習</h2>
+        <img src="./images/job_otenki_oneesan.png" id="img">
+        <p id="text">明日の福岡の天気は？</p>
+        <button id="btn">CLICK</button>
     </div>
+
+    <script>
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let img = document.getElementById("img");
+        btn.addEventListener('click', () => {
+            text.textContent = '台風が来ます';
+            text.setAttribute ('style','color : red;' );
+            img.setAttribute('src','./images/typhoon.png');
+        } );
+    </script>
 </body>
 </html>
