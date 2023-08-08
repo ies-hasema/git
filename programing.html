@@ -115,5 +115,18 @@
             }
         </style>
     </div>
+    <div class="section">
+        <h2>凶の運勢</h2>
+        <input id="omikuji_btn" type="button" value="くじを引く">
+        <p id="omikuji_result"></p>
+        
+    </div>
+    <script>
+        const list = ["大吉","中凶","小凶","末凶","凶","大凶","大大凶"];
+        document.getElementById("omikuji_btn").onclick = function () {
+        var random = Math.floor(Math.random() * list.length);
+        document.getElementById("omikuji_result").textContent = list[random];
+        }
+    </script>
 </body>
 </html>
