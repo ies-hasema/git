@@ -209,29 +209,10 @@ textarea {
 }
 /* 「お問い合わせ」ページ ここまで↑ */
 
-/* ゲーミングブライダル */
-
-#fair{
-	background-color: rgb(20, 20, 20);
-	color: #ffffff;
-}
-
-.gaming,
-.gaming_box {
-	animation: gaming 2s linear infinite;
-}
-
-@keyframes gaming {
-	0%{color: Magenta;}
-	33%{color: yellow;}
-	66%{color: Cyan;}
-	100%{color: Magenta;}
-}
-
-.gaming_box figure img{
-	width: 180px;
-	height: 150px;
-	object-fit: cover;
+#monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
 }
 
 /* ゲーミングブライダル ここまで*/
