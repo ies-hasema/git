@@ -5,6 +5,10 @@
 body {
 	background-color: #f0dee4;
 	color: #4d0d0d;
+	background-image: url(../images/ct_20201108-200339480_pudwd.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-size: 87.5%;
 	line-height: 1.5;
 }
@@ -205,12 +209,12 @@ textarea {
 }
 /* 「お問い合わせ」ページ ここまで↑ */
 
-/* ゲーミングブライダル */
-
-#fair{
-	background-color: rgb(20, 20, 20);
-	color: #ffffff;
+#monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
 }
+<<<<<<< HEAD
 
 .gaming,
 .gaming_box {
@@ -237,3 +241,5 @@ textarea {
 	font-weight: bold;
 	color: #342300;
 }
+=======
+>>>>>>> master
