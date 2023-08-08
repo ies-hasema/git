@@ -4,61 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-t    <title>プログラミング復習ページ</title>git
-=======
-=======
     <link rel="stylesheet" href="stylesheet.css">
->>>>>>> a3eab3a4e1301b6221995650d34b80dc7a25f484
     <title>プログラミング復習ページ（テスト変更）</title>
     <link rel="stylesheet" href="/css/programing.css">
     <link rel="stylesheet" href="./css/style.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="programing.css">
->>>>>>> 1a2c928f760ef40e92da131656e0557a766ac977
-=======
->>>>>>> 25f32893246900a786fe905fe4422ca8f7a5ab53
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>プログラミング復習ページ（テスト変更）</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #btn_main {
+            position: fixed;
+            bottom: 0;
+            height: 100px;
+            width: 100%;
+            background-color: rgb(207, 164, 118);
+            opacity: 0;
+        }
+        .Btn {
+            width: 50px;
+            height: 50px;
+        }
+        #gameBtn {
+            width: 217px;
+            margin: 10px auto;
+        }
+        #gameMain {
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+        #gameMain img {
+            position: absolute;
+        }
+        #out {
+            margin: 5px 0 0 80px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>
 
-<<<<<<< HEAD
-
     <div class="section___ms">
         <h2>OMIKUJI</h2>
-        <script>
-            window.onload = function () {
-                const list = ["大吉(`·⊝·´)", "中吉(๏д๏)", "小吉(꒪ཀ꒪)", "吉(*ﾟ▽ﾟ)ﾉ", "末吉(๑❛ꆚ❛๑)", "凶（๑✧∀✧๑）☀", "大凶(≧▽≦)"];
-                document.getElementById("button").onclick = function () {
-                    var random = Math.floor(Math.random() * list.length);
-                    document.getElementById("result").textContent = list[random];
-                }
-            }
-        </script>
         <div class="wrapper">
             <div class="wrapper-button">
                 <button id="button" class="button">PUSH</button>
             </div>
             <p id="result"></p>
         </div>
-    </div>
     <div class="section">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+        <!--css-->
+
+        <!--main-->
+        <h2>ボタンを押すと車を操作できます</h2>
+        <label><input type="button" name="btn" id="carBtn" value="動かす"></label>
+        <div id="gameMain">
+            <img src="./images/carright.png" alt="car">
+        </div>
+        <!--中島-->
+        <div class="section">
+            <!--css-->
+            <style>
+                body {
+                    margin: 0;
+                }
+
+                #btn_main {
+                    position: fixed;
+                    bottom: 0;
+                    height: 100px;
+                    width: 100%;
+                    background-color: rgb(207, 164, 118);
+                    opacity: 0;
+                }
+
+                .Btn {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                #gameBtn {
+                    width: 217px;
+                    margin: 10px auto;
+                }
+
+                #gameMain {
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+                }
+
+                #gameMain img {
+                    position: absolute;
+                }
+
+                #out {
+                    margin: 5px 0 0 80px;
+                }
+            </style>
+
+            <!--main-->
+            <h2>ボタンを押すと車を操作できます</h2>
+            <label><input type="button" name="btn" id="carBtn" value="動かす"></label>
+            <div id="gameMain">
+                <img src="./images/carright.png" alt="car">
+            </div>
+            <div id="btn_main">
+                <div id="gameBtn">
+                    <label><input id="left" class="Btn" type="button" value="←"></label>
+                    <label><input id="up" class="Btn" type="button" value="↑"></label>
+                    <label><input id="down" class="Btn" type="button" value="↓"></label>
+                    <label><input id="right" class="Btn" type="button" value="→"></label>
+                    <label><input id="out" type=button value="終わる"></label>
+                </div>
+            </div>
+
+            <!--js-->
+            <script>
+                function sleep(waitMsec) {
+                    var startMsec = new Date();
+
+                    // 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
+                    while (new Date() - startMsec < waitMsec);
+                }
+                let y = 0, x = 0;
+                let img3 = document.querySelector('#gameMain img');
+            </script>
         <h2>Gitの勉強</h2>
         <p><a href="https://backlog.com/ja/git-tutorial/" alt="サル先生のgit入門"></a>
-=======
         <h2>長谷川ボタン</h2>
         <button type="btn"><a href="#">はっせボタン</a></button>
->>>>>>> 1a2c928f760ef40e92da131656e0557a766ac977
-=======
         <h2 class="h2-1">夏だ!!1ヵ月で腹筋割る方法!</h2>
-=======
         <h2>夏だ!!1ヵ月で腹筋割る方法!</h2>
->>>>>>> 25f32893246900a786fe905fe4422ca8f7a5ab53
         <img src="./images/img1.png">
         <p class="p1">その方法は・・・!</p>
         <img src="./images/img2.png">
@@ -67,7 +147,6 @@ t    <title>プログラミング復習ページ</title>git
         そもそも夏は痩せにくい季節です。
         <h2>なぜ夏は痩せにくい?</h2>
         <p class="p3">夏は外気温が体温とほぼ同じな為、自然と代謝が下がる時期です。逆に、冬は外気温が非常に低い為、体を温めようと代謝が上がります。</p>
-<<<<<<< HEAD
         <p class="p4">つまり、<span>冬がダイエットのチャンスです。</span></p> 
         <h2>長谷川ボタン</h2>
         <button type="btn"><a href="#">はっせボタン</a></button>
@@ -75,10 +154,7 @@ t    <title>プログラミング復習ページ</title>git
         <p>文章文章文章文章文章文章文章文章文章文章文章文章</p>
         <h2>長谷川ボタン</h2>
         <button class="btnbtn" type="btn" ><a href="#">はっせボタン</a></button>
->>>>>>> a3eab3a4e1301b6221995650d34b80dc7a25f484
-=======
         <p class="p4">つまり、<span>冬がダイエットのチャンスです。</span></p>
->>>>>>> 25f32893246900a786fe905fe4422ca8f7a5ab53
     </div>
     <h2>長谷川ボタン</h2>
     <button type="btn"><a href="#">はっせボタン</a></button>
@@ -160,7 +236,6 @@ t    <title>プログラミング復習ページ</title>git
             target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px"
                 height="210px"></a>
     </div>
-    <<<<<<< HEAD <<<<<<< HEAD=======<br>
         <div class="section"
             style="background-color: transparent; padding: 20px; margin-top: 20px; border-radius: 12px;">
             <h2 style="border-bottom: 3px solid lightgray; display: inline-block; padding: 0 10px;">JavaScript 基本構文</h2>
@@ -450,7 +525,6 @@ t    <title>プログラミング復習ページ</title>git
         <script>
             window.alert("長谷川先生を信じますか");
         </script>
-=======
     <div class="section">
         <h2>JavaScript復習</h2>
         <img src="./images/job_otenki_oneesan.png" id="img">
@@ -468,7 +542,16 @@ t    <title>プログラミング復習ページ</title>git
             img.setAttribute('src','./images/typhoon.png');
         } );
     </script>
->>>>>>> 0808test
+<script>
+            window.onload = function () {
+                const list = ["大吉(`·⊝·´)", "中吉(๏д๏)", "小吉(꒪ཀ꒪)", "吉(*ﾟ▽ﾟ)ﾉ", "末吉(๑❛ꆚ❛๑)", "凶（๑✧∀✧๑）☀", "大凶(≧▽≦)"];
+                document.getElementById("button").onclick = function () {
+                    var random = Math.floor(Math.random() * list.length);
+                    document.getElementById("result").textContent = list[random];
+                }
+            }
+        </script>
+
 </body>
 
 </html>
