@@ -353,6 +353,10 @@
             <li><a href="https://www.amazon.co.jp/Habilis-%E6%8A%98%E3%82%8A%E3%81%9F%E3%81%9F%E3%81%BF%E6%9D%96-%E5%A4%9A%E6%A9%9F%E8%83%BD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AD-%E9%95%B7%E3%81%95%E8%AA%BF%E7%AF%80%E5%8F%AF%E8%83%BD-78-90cm/dp/B0BHXBVPYN/ref=sr_1_2_sspa?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3EW9UDI1ALB8L&keywords=%E6%9D%96&qid=1691467752&sprefix=%E6%9D%96%2Caps%2C183&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">杖</a></li>
         </ul>
     </div>
+    <div class="to-top"><a href="#"><img src="./images/to-top2.png" alt=""></a></div>
+    <div class="to-top-message">戻るのか！？</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         const list = ["大吉","中凶","小凶","末凶","凶","大凶","大大凶"];
         document.getElementById("omikuji_btn").onclick = function () {
@@ -362,6 +366,27 @@
     </script>
     <script>
         window.alert("長谷川先生を信じますか");
+    </script>
+    <script>
+        jQuery('a[href^="#"]').on('click', function() {
+            var id = jQuery(this).attr('href');
+            var position = 0;
+            if ( id != '#') {
+                position = jQuery(id).offset().top;
+            }
+            jQuery('html, body').animate({
+                scrollTop: position
+            },
+            300);
+        });
+
+        jQuery(window).on('scroll', function(){
+            if ( 500 < jQuery(this).scrollTop()) {
+                jQuery('.to-top, .to-top-message').addClass('is-show');
+            } else {
+                jQuery('.to-top, .to-top-message').removeClass('is-show');
+            }
+        });
     </script>
 </body>
 </html>
