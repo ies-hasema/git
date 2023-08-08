@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.section-main__inner {
+    width: 800px;
+}
+.mySwiper .swiper-slide img {
+    width: 100%; /* 画像の幅を統一したいサイズに設定 */
+    height: 500px; /* 画像の高さを統一したいサイズに設定 */
+    object-fit: cover; /* 画像が切り抜かれずに表示されるように設定 */
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+h2 {
+  font-family: 'Sacramento', cursive;
+}
