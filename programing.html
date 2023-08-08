@@ -77,15 +77,13 @@ t    <title>プログラミング復習ページ</title>git
     <link rel="stylesheet" href="./css/style.css">
 <<<<<<< HEAD
     <link rel="stylesheet" href="programing.css">
->>>>>>> 1a2c928f760ef40e92da131656e0557a766ac977
-=======
->>>>>>> 25f32893246900a786fe905fe4422ca8f7a5ab53
+
 </head>
 
 <body>
     <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>    
 
-<<<<<<< HEAD
+
 
     
     <div class="section">
@@ -150,18 +148,172 @@ t    <title>プログラミング復習ページ</title>git
             let y = 0, x = 0;
             let img = document.querySelector('#gameMain img');
 
-<<<<<<< HEAD
-        checkboxArat.addEventListener("click", function(){
-            alert("長谷川がいる");
-        })
-        checkboxArat2.addEventListener("click", function(){
-            location.href = "https://www.misterdonut.jp/";
-        })
+    <h2>長谷川ボタン</h2>
+    <button class="btnbtn" type="btn"><a href="#">はっせボタン</a></button>
+
+    <div class="section">
+        <h2>ドキドキわくわく夏休み</h2>
+        <p>夏休みの計画</p>
+        <table border="5" bordercolor="#4169e1" bgcolor="#e6e6fa" width="40%" height="1oo">
+            <tr align="center">
+                <th>起きる時間</th>
+                <th>寝る時間</th>
+            </tr>
+            <tr align="center">
+                <td>07:00</td>
+                <td>23:00</td>
+            </tr>
+            <tr align="left">
+                <td colspan="2">
+                    ・元気に遊ぶこと（不純異性交遊は禁止）<br>
+                    ・睡眠は重要！！（寝酒はおすすめできません）<br>
+                    ・お小遣いは計画的にご利用を・・・（臨時収入は見込めませんよ）<br>
+                    ・宿題は決して手伝いません。（すでに当てにしていたのなら残念でした）
+                </td>
+            </tr>
+        </table>
+    </div>
+=======
+                let img2 = document.querySelector('#gameMain img');
+
+
+            checkboxArat.addEventListener("click", function () {
+                alert("長谷川がいる");
+            })
+            checkboxArat2.addEventListener("click", function () {
+                location.href = "https://www.misterdonut.jp/";
+            })
+        </script>
+        <div class="img-c">
+            <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5"
+                target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px"
+                    height="210px"></a>
+            <h2>HTML・CSSの勉強におすすめなサイト</h2>
+            <p><a href="https://dubdesign.net/download/html-css/htmlcss-loading8/" rel="nofollow">⇒アニメーションローディングはこちら</a>
+            </p>
+        </div>
+        <div class="sectionmiyu">
+            <table id="kinou">
+                <thead>
+                    <tr>
+                        <th colspan="2">便利な機能</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>戻る</th>
+                        <td>ctrl + z</td>
+                    </tr>
+                    <tr>
+                        <th>戻りすぎたのを進む</th>
+                        <td>ctrl + z + shift</td>
+                    </tr>
+                    <tr>
+                        <th>複数行選択</th>
+                        <td>shift + alt</td>
+                    </tr>
+                    <tr>
+                        <th>表の枠線をつけるCSS<br>枠線を重ねて表示するCSS</th>
+                        <td>border: 線の種類 太さ 色;<br>border-collapse: collapse;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <style>
+                #kinou th,
+                #kinou td {
+                    border: dashed 1px #00090b;
+                }
+
+                #kinou {
+                    border-collapse: collapse;
+                    border: solid 1px #2d09f9;
+                    margin: 50px;
+                    background: linear-gradient(90deg, #b9e6f1, #f8ced5);
+                }
+
+                body {
+                    background: linear-gradient(1000deg, #ec9266, #a260bf);
+                }
+
+                .sectionmiyu,
+                .img-c {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 50px auto;
+                }
+            </style>
+        </div>
+        =======
+        <script>
+            document.querySelector('#carBtn').addEventListener('mousedown', () => {
+                document.querySelector('#btn_main').setAttribute('style', 'opacity: 1;');
+            })
+            document.querySelector('#out').addEventListener('mousedown', () => {
+                document.querySelector('#btn_main').setAttribute('style', 'opacity: 0;');
+            })
+            document.querySelector('#left').addEventListener('mousedown', () => {
+                console.log('押されました');
+                img.src = "./images/carleft.png"
+                x -= 10;
+                img.style.left = `${x}px`;
+                img.style.top = `${y}px`;
+                console.log('ひだり');
+                sleep(500);
+            })
+            document.querySelector('#right').addEventListener('mousedown', () => {
+                console.log('押されました');
+                img.src = "./images/carright.png"
+                x += 10;
+                img.style.left = `${x}px`;
+                img.style.top = `${y}px`;
+                console.log('みぎ');
+                sleep(500);
+            })
+            document.querySelector('#up').addEventListener('mousedown', () => {
+                console.log('押されました');
+                img.src = "./images/carup.png"
+                y -= 10;
+                img.style.left = `${x}px`;
+                img.style.top = `${y}px`;
+                console.log('うえ');
+                sleep(500);
+            })
+            document.querySelector('#down').addEventListener('mousedown', () => {
+                console.log('押されました');
+                img.src = "./images/cardown.png"
+                y += 10;
+                img.style.left = `${x}px`;
+                img.style.top = `${y}px`;
+                console.log('した');
+                sleep(500);
+            })
+        </script>
+    </div>
+
+    =======
+
+    <div class="section">
+        <h2>JavaScript復習</h2>
+        <img src="./images/job_otenki_oneesan.png" id="img">
+        <p id="text">明日の福岡の天気は？</p>
+        <button id="btn">CLICK</button>
+    </div>
+
+    <script>
+        let text1 = document.getElementById("text");
+        let btn1 = document.getElementById("btn");
+        let img1 = document.getElementById("img");
+        btn.addEventListener('click', () => {
+            text.textContent = '台風が来ます';
+            text.setAttribute('style', 'color : red;');
+            img.setAttribute('src', './images/typhoon.png');
+        });
     </script>
     <div class="img-c">
-        <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5" target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px" height="210px"></a>
-        <h2>HTML・CSSの勉強におすすめなサイト</h2>
-        <p><a href="https://dubdesign.net/download/html-css/htmlcss-loading8/" rel="nofollow">⇒アニメーションローディングはこちら</a></p>
+        <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5"
+            target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px"
+                height="210px"></a>
     </div>
     <div class="sectionmiyu">
         <table id="kinou">
@@ -190,74 +342,31 @@ t    <title>プログラミング復習ページ</title>git
             </tbody>
         </table>
         <style>
-            #kinou th,#kinou td{
+            #kinou th,
+            #kinou td {
                 border: dashed 1px #00090b;
             }
-            #kinou{
+
+            #kinou {
                 border-collapse: collapse;
                 border: solid 1px #2d09f9;
                 margin: 50px;
-                background: linear-gradient(90deg,#b9e6f1,#f8ced5);
+                background: linear-gradient(90deg, #b9e6f1, #f8ced5);
             }
-            body{
-                background: linear-gradient(1000deg,#ec9266,#a260bf);
+
+            body {
+                background: linear-gradient(1000deg, #ec9266, #a260bf);
             }
-            .sectionmiyu,.img-c{
+
+            .sectionmiyu,
+            .img-c {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin:50px auto;
+                margin: 50px auto;
             }
         </style>
     </div>
-=======
-            document.querySelector('#carBtn').addEventListener('mousedown', () => {
-                document.querySelector('#btn_main').setAttribute('style', 'opacity: 1;');
-            })
-            document.querySelector('#out').addEventListener('mousedown', () => {
-                document.querySelector('#btn_main').setAttribute('style', 'opacity: 0;');
-            })
-            document.querySelector('#left').addEventListener('mousedown',() => {
-                console.log('押されました');
-                img.src = "./images/carleft.png"
-                x -= 10;
-                img.style. left = `${x}px`;
-                img.style. top = `${y}px`;
-                console.log('ひだり');
-                sleep(500);
-            })
-            document.querySelector('#right').addEventListener('mousedown',() => {
-                console.log('押されました');
-                img.src = "./images/carright.png"
-                x += 10;
-                img.style. left = `${x}px`;
-                img.style. top = `${y}px`;
-                console.log('みぎ');
-                sleep(500);
-            })
-            document.querySelector('#up').addEventListener('mousedown',() => {
-                console.log('押されました');
-                img.src = "./images/carup.png"
-                y -= 10;
-                img.style. left = `${x}px`;
-                img.style. top = `${y}px`;
-                console.log('うえ');
-                sleep(500);
-            })
-            document.querySelector('#down').addEventListener('mousedown',() => {
-                console.log('押されました');
-                img.src = "./images/cardown.png"
-                y += 10;
-                img.style. left = `${x}px`;
-                img.style. top = `${y}px`;
-                console.log('した');
-                sleep(500);
-            })
-        </script>
-    </div>
-    
-=======
->>>>>>> 7e7b7ffe7c624c4906dec3405a7dbd6ad55a687d
     <div class="section">
         <h2>JavaScript復習</h2>
         <img src="./images/job_otenki_oneesan.png" id="img">
@@ -265,19 +374,20 @@ t    <title>プログラミング復習ページ</title>git
         <button id="btn">CLICK</button>
     </div>
 
-<<<<<<< HEAD
     <script>
         let text = document.getElementById("text");
         let btn = document.getElementById("btn");
         let img = document.getElementById("img");
         btn.addEventListener('click', () => {
             text.textContent = '台風が来ます';
-            text.setAttribute ('style','color : red;' );
-            img.setAttribute('src','./images/typhoon.png');
-        } );
+            text.setAttribute('style', 'color : red;');
+            img.setAttribute('src', './images/typhoon.png');
+        });
     </script>
-<<<<<<< HEAD
-<script>
+
+    <div class="section">
+        <h2>OMIKUJI</h2>
+        <script>
             window.onload = function () {
                 const list = ["大吉(`·⊝·´)", "中吉(๏д๏)", "小吉(꒪ཀ꒪)", "吉(*ﾟ▽ﾟ)ﾉ", "末吉(๑❛ꆚ❛๑)", "凶（๑✧∀✧๑）☀", "大凶(≧▽≦)"];
                 document.getElementById("button").onclick = function () {
@@ -286,6 +396,7 @@ t    <title>プログラミング復習ページ</title>git
                 }
             }
         </script>
+<<<<<<< HEAD
 
 =======
 =======
@@ -316,6 +427,12 @@ t    <title>プログラミング復習ページ</title>git
         <div class="wrapper-button">
             <button id="button" class="button"><a href="./images/kao.jpg">ぎゃああああ</a></button>
         </div>
+=======
+        <div class="wrapper">
+            <div class="wrapper-button">
+                <button id="button" class="button"><a href="./images/kao.jpg">PUSH</a></button>
+            </div>
+>>>>>>> 19c40a6b650e396d0c0f7b526430dc15abcc1a4c
 
 
 

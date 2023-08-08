@@ -14,7 +14,7 @@ body {
     height: 10rem;
 }
 
-.section___ms h2 {
+/* .section___ms h2 {
     border-left: 5px solid #fc3003;
     color: #333;
     font-size: 24px;
@@ -23,7 +23,7 @@ body {
     font-weight: 300;
     font-family: 'Handjet', cursive;
 
-}
+} */
 
 button {
     position: relative;
