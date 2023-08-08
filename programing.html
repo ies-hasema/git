@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <<<<<<< HEAD <<<<<<< HEAD t <title>プログラミング復習ページ</title>git
         =======
         =======
@@ -51,6 +52,58 @@
             </div>
             <p id="result"></p>
         </div>
+=======
+    <title>プログラミング復習ページ</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>プログラミング復習ページ（テスト変更）</title>
+    <link rel="stylesheet" href="/css/programing.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="programing.css">
+</head>
+
+<body>
+    <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>    
+<div class="section">
+        <!--css-->
+        <style>
+            body {
+                margin: 0;
+            }
+            #btn_main {
+                position: fixed;
+                bottom: 0;
+                height: 100px;
+                width: 100%;
+                background-color: rgb(207, 164, 118);
+                opacity: 0;
+            }
+            .Btn {
+                width: 50px;
+                height: 50px;
+            }
+            #gameBtn {
+                width: 217px;
+                margin: 10px auto;
+            }
+            #gameMain {
+                width: 100%;
+                height: 300px;
+                position: relative;
+            }
+            #gameMain img {
+                position: absolute;
+            }
+            #out {
+                margin: 5px 0 0 80px;
+            }
+        </style>
+
+        <!--main-->
+        <h2>ボタンを押すと車を操作できます</h2>
+        <label><input type="button" name="btn" id="carBtn" value="動かす"></label>
+        <div id="gameMain">
+            <img src="./images/carright.png" alt="car">
+>>>>>>> 1a4e77f778e715c93e03c05e42cbdbf8a39a1168
         </div>
         <!--中島-->
         <div class="section">
@@ -121,6 +174,7 @@
                 let y = 0, x = 0;
                 let img = document.querySelector('#gameMain img');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 checkboxArat.addEventListener("click", function () {
                     alert("長谷川がいる");
@@ -255,6 +309,108 @@
             });
         </script>
         >>>>>>> 0808test
+=======
+        checkboxArat.addEventListener("click", function(){
+            alert("長谷川がいる");
+        })
+        checkboxArat2.addEventListener("click", function(){
+            location.href = "https://www.misterdonut.jp/";
+        })
+    </script>
+    <div class="img-c">
+        <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5" target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px" height="210px"></a>
+        <h2>HTML・CSSの勉強におすすめなサイト</h2>
+        <p><a href="https://dubdesign.net/download/html-css/htmlcss-loading8/" rel="nofollow">⇒アニメーションローディングはこちら</a></p>
+    </div>
+    <div class="sectionmiyu">
+        <table id="kinou">
+            <thead>
+                <tr>
+                    <th colspan="2">便利な機能</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>戻る</th>
+                    <td>ctrl + z</td>
+                </tr>
+                <tr>
+                    <th>戻りすぎたのを進む</th>
+                    <td>ctrl + z + shift</td>
+                </tr>
+                <tr>
+                    <th>複数行選択</th>
+                    <td>shift + alt</td>
+                </tr>
+                <tr>
+                    <th>表の枠線をつけるCSS<br>枠線を重ねて表示するCSS</th>
+                    <td>border: 線の種類 太さ 色;<br>border-collapse: collapse;</td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #kinou th,#kinou td{
+                border: dashed 1px #00090b;
+            }
+            #kinou{
+                border-collapse: collapse;
+                border: solid 1px #2d09f9;
+                margin: 50px;
+                background: linear-gradient(90deg,#b9e6f1,#f8ced5);
+            }
+            body{
+                background: linear-gradient(1000deg,#ec9266,#a260bf);
+            }
+            .sectionmiyu,.img-c{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:50px auto;
+            }
+        </style>
+    </div>
+    <div class="section">
+        <h2>JavaScript復習</h2>
+        <img src="./images/job_otenki_oneesan.png" id="img">
+        <p id="text">明日の福岡の天気は？</p>
+        <button id="btn">CLICK</button>
+    </div>
+
+    <script>
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let img = document.getElementById("img");
+        btn.addEventListener('click', () => {
+            text.textContent = '台風が来ます';
+            text.setAttribute ('style','color : red;' );
+            img.setAttribute('src','./images/typhoon.png');
+        } );
+    </script>
+>>>>>>> 0808test
+
+<div class="section___ms">
+    <h2>OMIKUJI</h2>
+    <script>
+        window.onload = function () {
+            const list = ["大吉(`·⊝·´)", "中吉(๏д๏)", "小吉(꒪ཀ꒪)", "吉(*ﾟ▽ﾟ)ﾉ", "末吉(๑❛ꆚ❛๑)", "凶（๑✧∀✧๑）☀", "大凶(≧▽≦)"];
+            document.getElementById("button").onclick = function () {
+                var random = Math.floor(Math.random() * list.length);
+                document.getElementById("result").textContent = list[random];
+            }
+        }
+    </script>
+    <div class="wrapper">
+        <div class="wrapper-button">
+            <button id="button" class="button">PUSH</button>
+        </div>
+        <p id="result"></p>
+    </div>
+</div>
+
+
+
+
+>>>>>>> 1a4e77f778e715c93e03c05e42cbdbf8a39a1168
 </body>
 
 </html>
