@@ -1,294 +1,80 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プログラミング復習ページ</title>
     <link rel="stylesheet" href="stylesheet.css">
     <title>プログラミング復習ページ（テスト変更）</title>
-    <link rel="stylesheet" href="./css/programing.css">
+    <link rel="stylesheet" href="/css/programing.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="programing.css">
 </head>
+
 <body>
-    <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>
-    <div class="section">
-        <h2>夏だ!!1ヵ月で腹筋割る方法!</h2>
-        <img src="./images/img1.png">
-        <p class="p1">その方法は・・・!</p>
-        <img src="./images/img2.png">
-        <p class="p2">そうです。日本一のボディービルダーも言う通り、<span>たった1ヵ月で腹筋は絶対に割れません。</span></p> 
-        ましてや今まで運動もしたことがない人なら尚更、無理な話です。
-        そもそも夏は痩せにくい季節です。
-        <h2>なぜ夏は痩せにくい?</h2>
-        <p class="p3">夏は外気温が体温とほぼ同じな為、自然と代謝が下がる時期です。逆に、冬は外気温が非常に低い為、体を温めようと代謝が上がります。</p>
-        <p class="p4">つまり、<span>冬がダイエットのチャンスです。</span></p> 
-        <h2>長谷川ボタン</h2>
-        <button type="btn"><a href="#">はっせボタン</a></button>
-        <button type="btn"><a href="./images/kao.jpg">はっせボタン2　★押してください★</a></button>
-        <h2>タイトル</h2>
-        <p>文章文章文章文章文章文章文章文章文章文章文章文章</p>
-        <h2>長谷川ボタン</h2>
-        <button class="btnbtn" type="btn" ><a href="#">はっせボタン</a></button>
-    </div>
-    <div class="section">
-        <h2>人生の夏休み</h2>
-        <p>夏休みの計画</p>
-        <table border="5"  bordercolor="#4169e1" bgcolor="#e6e6fa" width="40%" height="1oo">
-            <tr align="center">
-                <th>起きる時間</th>
-                <th>寝る時間</th>
-            </tr>
-            <tr align="center">
-                <td>07:00</td>
-                <td>23:00</td>
-            </tr>
-            <tr align="left">
-                <td colspan="2">
-                ・元気に遊ぶこと（不純異性交遊は禁止）<br>
-                ・睡眠は重要！！（寝酒はおすすめできません）<br>
-                ・お小遣いは計画的にご利用を・・・（臨時収入は見込めませんよ）<br>
-                ・宿題は決して手伝いません。（すでに当てにしていたのなら残念でした）
-                </td>
-            </tr>
-        </table>
-    </div>
+    <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>    
+<div class="section">
+        <!--css-->
+        <style>
+            body {
+                margin: 0;
+            }
+            #btn_main {
+                position: fixed;
+                bottom: 0;
+                height: 100px;
+                width: 100%;
+                background-color: rgb(207, 164, 118);
+                opacity: 0;
+            }
+            .Btn {
+                width: 50px;
+                height: 50px;
+            }
+            #gameBtn {
+                width: 217px;
+                margin: 10px auto;
+            }
+            #gameMain {
+                width: 100%;
+                height: 300px;
+                position: relative;
+            }
+            #gameMain img {
+                position: absolute;
+            }
+            #out {
+                margin: 5px 0 0 80px;
+            }
+        </style>
 
-        <h2>GitとGitHubとの違いとは？</h2>
-        <p><ul><li>Gitは「プログラム」、GitHubは「Gitを用いたサービス」のひとつ</li>
-            <li>GitHubは、Gitを用いたソフトウェア開発プロジェクトのための共有サービス</li></ul></p>
-    </div>
-    <div class="section" style="background-color: lightcyan; border: 1px solid black; padding: 20px; display: inline-block; border-radius: 12px;">
-        <h2 style="border-bottom: 3px solid lightgray;">コマンドライン</h2>
-        <p><strong>pwd：</strong>現在のディレクトリを表示</p>
-        <strong>ls：</strong>フォルダの中を見る</p>
-        <strong>ls -al：</strong>隠しファイルなどもすべて見る</p>
-        <strong>cd：</strong>ディレクトリを移動する</p>
-        <strong>cd ../：</strong>階層をひとつ上る</p>
-        <strong>touch ファイル名：</strong>ファイルを作る</p>
-        <strong>mkdir ディレクトリ名：</strong>ディレクトリを作成する</p>
-        <strong>rm ファイル・ディレクトリ名：</strong>ファイル、ディレクトリを削除する</p>
-        <strong>explorer パス：</strong>指定した階層をエクスプローラーで表示する</p>
-        <strong>vim ファイル名：</strong>ファイルの中身を編集する</p>
-    </div>
-
-        <h3>クローンについてHELP！！</h3>
-        <p>URLの取得から躓きました。まぐれでここにたどり着いてます。だれかクローンってどうすればいいか詳細ください！<br>(・・?(・・?(・・?</p>
-            <p>この文書は後で画面を綺麗にするために削除します！</p>
-    </div>
-    <div>
-        <label id="checkboxArat"><p>長谷川ボタン<input type="checkbox"></p></label>
-        <label id="checkboxArat2"><p>長谷川ボタン<input type="checkbox"></p></label>
-    </div>
-    <script>
-        let checkboxArat = document.querySelector('#checkboxArat');
-        let checkboxArat2 = document.querySelector('#checkboxArat');
-
-        checkboxArat.addEventListener("click", function(){
-            alert("長谷川がいる");
-        })
-        checkboxArat2.addEventListener("click", function(){
-            location.href = "https://www.misterdonut.jp/";
-        })
-    </script>
-    <div class="img-c">
-        <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5" target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px" height="210px"></a>
-    </div>
-    <br>
-    <div class="section" style="background-color: transparent; padding: 20px; margin-top: 20px; border-radius: 12px;">
-        <h2 style="border-bottom: 3px solid lightgray; display: inline-block; padding: 0 10px;">JavaScript 基本構文</h2>
-
-            <div class="items" style="display: flex; flex-wrap: wrap;">
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- if 文 -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        if (条件式) {
-            trueブロック
-        } else if (条件式) {
-        　次のtrueブロック
-        } else {
-            falseブロック
-        }
-    
-        //例
-        let x = 30;
-    
-        if (x >= 20) {
-            console.log('変数xは20以上です。');
-        } else if (x >= 10) {
-            console.log('変数xは10以上です。');
-        } else {
-            console.log('変数xは10未満です。');
-        }
-                        </code>
-                    </pre>
-                </div>
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- switch 文 -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        switch (式) {
-            case 値1:
-            「式 === 値1」である場合の命令
-                break;
-            case 値2:
-            「式 === 値2」である場合の命令
-                break;
-            default:
-                式の値がすべての値に合致しない場合の命令
-                break;
-        }
-        
-        //例
-        let rank = 'B';
-        switch(rank) {
-            case 'A' :
-                console.log('Aランクです。');
-                break;
-            case 'B' :
-                console.log('Bランクです。');
-                break;
-            case 'C' :
-                console.log('Cランクです。');
-                break;
-            default : 
-                console.log('ランク外です。');
-                break;
-        }
-        
-        //フォールスルーさせる場合
-        switch(rank) {
-            case 'A' :
-            case 'B' :
-            case 'C' :
-                console.log('合格です！');
-                break;
-            default : 
-                console.log('不合格です！');
-                break;
-        }
-                        </code>
-                    </pre>
-                </div>
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- for 文 -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        for (初期化式; ループ継続条件式; 増減式) {
-            ループ内で実行する命令
-        }
-        
-        //配列を取り出すときは、
-        for (let i = 0; i < array.length; i++) {
-            console.log(array[i]);
-        }
-                        </code>
-                    </pre>
-                </div>
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- while 文 -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        while (条件式) {
-            条件がtrueのときの命令
-        }
-        
-        //例
-        let i = 5;
-        while(i < 10) {
-            console.log(`iの値は${i}`);
-            i++;
-        }
-                        </code>
-                    </pre>
-                </div>
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- for in：オブジェクトの中身を取り出す -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        for (仮変数 in オブジェクト名) {
-            ループ内で実行する命令
-        }
-        
-        //例
-        let data = {
-            apple: 150,
-            orange: 100,
-            banana: 120
-        };
-        
-        for (let key in data) {
-            console.log(`${key} = ${data[key]}`);
-        }
-        
-        //結果
-        apple = 150
-        orange = 100
-        banana = 120
-                        </code>
-                    </pre>
-                </div>
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- for of：配列の中身を取り出す -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        for (仮変数 of 配列名) {
-            ループ内で実行する命令
-        }
-        
-        //例
-        let data = ['apple', 'orange', 'banana'];
-        for (let value of data) {
-            console.log(value);
-        }
-        
-        //結果
-        apple
-        orange
-        banana
-                        </code>
-                    </pre>
-                </div>
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- break（一番内側のループを脱出） -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        let k = 1;
-        let result = 0;
-        
-        for (k = 1; k <= 100; k++) {
-            result += k;
-            if (result > 1000) { break; }
-        }
-        
-        console.log(`合計値が1000を超えるのは${k}`);
-                        </code>
-                    </pre>
-                </div>
-                <div class="item" style="background-color: #fafafa; padding: 10px 20px 0; border-radius: 12px; margin: 10px;">
-                    <h3>- continue （特定の条件下の周回をスキップ） -</h3>
-                    <pre>
-                        <code style="font-size: 16px; line-height: 1.5; font-weight: bold;">
-        let result = 0;
-    
-        for (let m = 1; m < 100; m++) {
-            if (m % 2 === 0) { continue; }
-            result += m;
-            console.log(`${result-m} + ${m} = ${result}`);
-        }
-        
-        console.log(`合計：${result}`);
-                        </code>
-                    </pre>
-                </div>
+        <!--main-->
+        <h2>ボタンを押すと車を操作できます</h2>
+        <label><input type="button" name="btn" id="carBtn" value="動かす"><a href="./images/kao.jpg"></a></label>
+        <div id="gameMain">
+            <img src="./images/carright.png" alt="car">
         </div>
-    </div>
-        <label id="checkboxArat"><p>長谷川ボタン<input type="checkbox"></p></label>
-        <label id="checkboxArat2"><p>長谷川ボタン<input type="checkbox"></p></label>
-    </div>
-    <script>
-        checkboxArat = document.querySelector('#checkboxArat');
-        checkboxArat2 = document.querySelector('#checkboxArat');
+        <div id="btn_main">
+            <div id="gameBtn">
+                <label><input id="left" class="Btn" type="button" value="←"></label>
+                <label><input id="up" class="Btn" type="button" value="↑"></label>
+                <label><input id="down" class="Btn" type="button" value="↓"></label>
+                <label><input id="right" class="Btn" type="button" value="→"></label>
+                <label><input id="out" type=button value="終わる"></label>
+            </div>
+        </div>
+
+        <!--js-->
+        <script>
+            function sleep(waitMsec) {
+                var startMsec = new Date();
+
+                // 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
+                while (new Date() - startMsec < waitMsec);
+            }
+            let y = 0, x = 0;
+            let img = document.querySelector('#gameMain img');
 
         checkboxArat.addEventListener("click", function(){
             alert("長谷川がいる");
@@ -299,6 +85,8 @@
     </script>
     <div class="img-c">
         <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5" target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px" height="210px"></a>
+        <h2>HTML・CSSの勉強におすすめなサイト</h2>
+        <p><a href="https://dubdesign.net/download/html-css/htmlcss-loading8/" rel="nofollow">⇒アニメーションローディングはこちら</a></p>
     </div>
     <div class="sectionmiyu">
         <table id="kinou">
@@ -348,27 +136,46 @@
         </style>
     </div>
     <div class="section">
-        <h2>凶の運勢</h2>
-        <input id="omikuji_btn" type="button" value="くじを引く">
-        <p id="omikuji_result"></p>
-        
+        <h2>JavaScript復習</h2>
+        <img src="./images/job_otenki_oneesan.png" id="img">
+        <p id="text">明日の福岡の天気は？</p>
+        <button id="btn">CLICK</button>
     </div>
-    <div>
-        <ul>
-            <li><a href="https://www.amazon.co.jp/Amazon%E9%99%90%E5%AE%9A%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89-like-%E3%81%8A%E3%81%84%E3%81%97%E3%81%84%E6%B0%B4-%E3%83%A9%E3%83%99%E3%83%AB%E3%83%AC%E3%82%B9%E3%83%9C%E3%83%88%E3%83%AB-2L%C3%979%E6%9C%AC/dp/B07RWWZT8J/?_encoding=UTF8&pd_rd_w=xp90H&content-id=amzn1.sym.0705b05c-f995-4d77-a7de-81cecad185ae&pf_rd_p=0705b05c-f995-4d77-a7de-81cecad185ae&pf_rd_r=DZ3BCR962PZKM2MWZ68Y&pd_rd_wg=CYuEU&pd_rd_r=a0b0c4d6-998d-49bd-82e5-794f4672b351&ref_=pd_gw_ref_5cb6302b-cd21-49e1-89c2-a2c1ab90dceb">水</a></li>
-            <li><a href="https://www.amazon.co.jp/%E3%83%9D%E3%83%AA%E3%83%87%E3%83%B3%E3%83%88-60000000114884-%E9%85%B5%E7%B4%A0%E5%85%A5%E3%82%8A%E3%83%9D%E3%83%AA%E3%83%87%E3%83%B3%E3%83%88108%E9%8C%A0-6%E9%8C%A0%E5%A2%97%E9%87%8F%E5%93%81-99-9-%E9%99%A4%E8%8F%8C/dp/B075K9KFCN/ref=sr_1_5?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2YLT85WWRXWL7&keywords=%E3%83%9D%E3%83%AA%E3%83%87%E3%83%B3%E3%83%88&qid=1691467699&sprefix=%E3%83%9D%E3%83%AA%E3%83%87%E3%83%B3%E3%83%88%2Caps%2C179&sr=8-5&th=1">ポリデント</a></li>
-            <li><a href="https://www.amazon.co.jp/Habilis-%E6%8A%98%E3%82%8A%E3%81%9F%E3%81%9F%E3%81%BF%E6%9D%96-%E5%A4%9A%E6%A9%9F%E8%83%BD%E3%82%B9%E3%83%86%E3%83%83%E3%82%AD-%E9%95%B7%E3%81%95%E8%AA%BF%E7%AF%80%E5%8F%AF%E8%83%BD-78-90cm/dp/B0BHXBVPYN/ref=sr_1_2_sspa?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=3EW9UDI1ALB8L&keywords=%E6%9D%96&qid=1691467752&sprefix=%E6%9D%96%2Caps%2C183&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">杖</a></li>
-        </ul>
-    </div>
+
     <script>
-        const list = ["大吉","中凶","小凶","末凶","凶","大凶","大大凶"];
-        document.getElementById("omikuji_btn").onclick = function () {
-        var random = Math.floor(Math.random() * list.length);
-        document.getElementById("omikuji_result").textContent = list[random];
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let img = document.getElementById("img");
+        btn.addEventListener('click', () => {
+            text.textContent = '台風が来ます';
+            text.setAttribute ('style','color : red;' );
+            img.setAttribute('src','./images/typhoon.png');
+        } );
+    </script>
+>>>>>>> 0808test
+
+<div class="section___ms">
+    <h2>OMIKUJI</h2>
+    <script>
+        window.onload = function () {
+            const list = ["大吉(`·⊝·´)", "中吉(๏д๏)", "小吉(꒪ཀ꒪)", "吉(*ﾟ▽ﾟ)ﾉ", "末吉(๑❛ꆚ❛๑)", "凶（๑✧∀✧๑）☀", "大凶(≧▽≦)"];
+            document.getElementById("button").onclick = function () {
+                var random = Math.floor(Math.random() * list.length);
+                document.getElementById("result").textContent = list[random];
+            }
         }
     </script>
-    <script>
-        window.alert("長谷川先生を信じますか");
-    </script>
+    <div class="wrapper">
+        <div class="wrapper-button">
+            <button id="button" class="button">PUSH</button>
+        </div>
+        <p id="result"></p>
+    </div>
+</div>
+
+
+
+
 </body>
+
 </html>
