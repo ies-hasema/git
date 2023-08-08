@@ -46,6 +46,28 @@
 			</form>
 		</article>
 	</div>
+	<style>
+		input[type=radio]+label:before{
+			content: "";
+			display: inline-block;
+			background-size: contain;
+			width: 140px;
+			height: 140px;
+		}
+		input[type=radio][value="0"]+label:before{
+			background-image: url(./images/heart.png);
+		}
+		input[type=radio][value="1"]+label:before{
+			background-image: url(./images/heart2.png);
+		}
+		input[type=radio]:checked+label::before{
+			border: 3px solid #000;
+			box-sizing: border-box;
+		}
+		input[type=radio]{
+			display: none;
+		}
+	</style>
 	<div id="sub">
 		<aside>
 			<div class="bnr_inner">
