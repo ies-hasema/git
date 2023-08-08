@@ -26,8 +26,24 @@ t    <title>プログラミング復習ページ</title>git
 
 <<<<<<< HEAD
 
-    
-    <div class="section">
+        <div class="wrapper">
+            <div class="wrapper-button">
+                <button id="button" class="button">PUSH</button>
+            </div>
+            <p id="result"></p>
+        </div>
+=======
+    <title>プログラミング復習ページ</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>プログラミング復習ページ（テスト変更）</title>
+    <link rel="stylesheet" href="/css/programing.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="programing.css">
+</head>
+
+<body>
+    <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>    
+<div class="section">
         <!--css-->
         <style>
             body {
@@ -61,6 +77,55 @@ t    <title>プログラミング復習ページ</title>git
                 margin: 5px 0 0 80px;
             }
         </style>
+
+        <!--main-->
+        <h2>ボタンを押すと車を操作できます</h2>
+        <label><input type="button" name="btn" id="carBtn" value="動かす"></label>
+        <div id="gameMain">
+            <img src="./images/carright.png" alt="car">
+>>>>>>> 1a4e77f778e715c93e03c05e42cbdbf8a39a1168
+        </div>
+        <!--中島-->
+        <div class="section">
+            <!--css-->
+            <style>
+                body {
+                    margin: 0;
+                }
+
+                #btn_main {
+                    position: fixed;
+                    bottom: 0;
+                    height: 100px;
+                    width: 100%;
+                    background-color: rgb(207, 164, 118);
+                    opacity: 0;
+                }
+
+                .Btn {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                #gameBtn {
+                    width: 217px;
+                    margin: 10px auto;
+                }
+
+                #gameMain {
+                    width: 100%;
+                    height: 300px;
+                    position: relative;
+                }
+
+                #gameMain img {
+                    position: absolute;
+                }
+
+                #out {
+                    margin: 5px 0 0 80px;
+                }
+            </style>
 
         <!--main-->
         <h2>ボタンを押すと車を操作できます</h2>
