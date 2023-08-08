@@ -4,32 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<<<< Temporary merge branch 1
-=======
-
-=======
->>>>>>> unko
-    <<<<<<< HEAD <<<<<<< HEAD t <title>プログラミング復習ページ</title>git
-        =======
-        =======
-        <link rel="stylesheet" href="stylesheet.css">
-        >>>>>>> a3eab3a4e1301b6221995650d34b80dc7a25f484
-        <title>プログラミング復習ページ（テスト変更）</title>
-        <link rel="stylesheet" href="/css/programing.css">
-        <link rel="stylesheet" href="./css/style.css">
-<<<<<<< HEAD
-        <<<<<<< HEAD <link rel="stylesheet" href="programing.css">
-            >>>>>>> 1a2c928f760ef40e92da131656e0557a766ac977
-            =======
-            >>>>>>> 25f32893246900a786fe905fe4422ca8f7a5ab53
+    <title>プログラミング復習ページ</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>プログラミング復習ページ（テスト変更）</title>
+    <link rel="stylesheet" href="/css/programing.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="programing.css">
+    <link rel="stylesheet" href="/css/programing.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="programing.css">
+    <link rel="stylesheet" href="./stylesheet.css">
 </head>
 
 <body>
     <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>
-
-    <<<<<<< HEAD <div class="section___ms">
+    <div class="section___ms">
         <h2>OMIKUJI</h2>
         <script>
             window.onload = function () {
@@ -59,27 +48,7 @@
             </div>
             <p id="result"></p>
         </div>
-=======
->>>>>>> d93b7f79fc208d6ddcd150ed27c585a5d3c8594c
-=======
-        <link rel="stylesheet" href="programing.css">
-</head>
->>>>>>> unko
-    <title>プログラミング復習ページ</title>
-=========
-t    <title>プログラミング復習ページ</title>git
-=======
-=======
->>>>>>>>> Temporary merge branch 2
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>プログラミング復習ページ（テスト変更）</title>
-    <link rel="stylesheet" href="/css/programing.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="programing.css">
-
-</head>
-
-<body>
+    </div>
     <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>    
 
 
@@ -141,54 +110,6 @@ t    <title>プログラミング復習ページ</title>git
                 margin:50px auto;
             }
         </style>
-    </div>
-=======
-            document.querySelector('#carBtn').addEventListener('mousedown', () => {
-                document.querySelector('#btn_main').setAttribute('style', 'opacity: 1;');
-            })
-            document.querySelector('#out').addEventListener('mousedown', () => {
-                document.querySelector('#btn_main').setAttribute('style', 'opacity: 0;');
-            })
-            document.querySelector('#left').addEventListener('mousedown', () => {
-                console.log('押されました');
-                img.src = "./images/carleft.png"
-                x -= 10;
-                img.style.left = `${x}px`;
-                img.style.top = `${y}px`;
-                console.log('ひだり');
-                sleep(500);
-            })
-            document.querySelector('#right').addEventListener('mousedown', () => {
-                console.log('押されました');
-                img.src = "./images/carright.png"
-                x += 10;
-                img.style.left = `${x}px`;
-                img.style.top = `${y}px`;
-                console.log('みぎ');
-                sleep(500);
-            })
-            document.querySelector('#up').addEventListener('mousedown', () => {
-                console.log('押されました');
-                img.src = "./images/carup.png"
-                y -= 10;
-                img.style.left = `${x}px`;
-                img.style.top = `${y}px`;
-                console.log('うえ');
-                sleep(500);
-            })
-            document.querySelector('#down').addEventListener('mousedown', () => {
-                console.log('押されました');
-                img.src = "./images/cardown.png"
-                y += 10;
-                img.style.left = `${x}px`;
-                img.style.top = `${y}px`;
-                console.log('した');
-                sleep(500);
-            })
-        </script>
-    </div>
-
-    =======
 
     <div class="section">
         <h2>JavaScript復習</h2>
@@ -293,21 +214,6 @@ t    <title>プログラミング復習ページ</title>git
                 }
             }
         </script>
-<<<<<<< HEAD
-
-=======
-=======
-                    <script>
-                        let text = document.getElementById("text");
-                        let btn = document.getElementById("btn");
-                        let img = document.getElementById("img");
-                        btn.addEventListener('click', () => {
-                            text.textContent = '台風が来ます';
-                            text.setAttribute('style', 'color : red;');
-                            img.setAttribute('src', './images/typhoon.png');
-                        });
-                    </script>
->>>>>>> 0b232cfe6104472a9f0d5a03ce09332982978ad1
 
 <div class="section___ms">
     <h2>OMIKUJI</h2>
@@ -324,52 +230,14 @@ t    <title>プログラミング復習ページ</title>git
         <div class="wrapper-button">
             <button id="button" class="button"><a href="./images/kao.jpg">ぎゃああああ</a></button>
         </div>
-=======
         <div class="wrapper">
             <div class="wrapper-button">
                 <button id="button" class="button"><a href="./images/kao.jpg">PUSH</a></button>
             </div>
->>>>>>> 19c40a6b650e396d0c0f7b526430dc15abcc1a4c
 
 
 
-<!--中島-->
-<div class="section">
-    <!--css-->
-    <style>
-        body {
-            margin: 0;
-        }
-        #btn_main {
-            position: fixed;
-            bottom: 0;
-            height: 100px;
-            width: 100%;
-            background-color: rgb(207, 164, 118);
-            opacity: 0;
-        }
-        .Btn {
-            width: 50px;
-            height: 50px;
-        }
-        #gameBtn {
-            width: 217px;
-            margin: 10px auto;
-        }
-        #gameMain {
-            width: 100%;
-            height: 300px;
-            position: relative;
-        }
-        #gameMain img {
-            position: absolute;
-        }
-        #out {
-            margin: 5px 0 0 80px;
-        }
-    </style>
 
-    
 </body>
 
 </html>
