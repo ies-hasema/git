@@ -5,9 +5,9 @@
 body {
 	background-color: #f0dee4;
 	color: #4d0d0d;
-	background-image: url(../images/ct_20201108-200339480_pudwd.jpg);
+	background-image: url(../images/bg_h2_head.png);
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-size: cover;
 	font-size: 87.5%;
 	line-height: 1.5;
