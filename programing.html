@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プログラミング復習ページ</title>
+    <title>プログラミング復習ページ（テスト変更）</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="programing.css">
 </head>
 <body>
     <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>
@@ -12,6 +14,28 @@
         <button type="btn"><a href="#">はっせボタン</a></button>
     </div>
     <div class="section">
+        <h2>ドキドキわくわく夏休み</h2>
+        <p>夏休みの計画</p>
+        <table border="5"  bordercolor="#4169e1" bgcolor="#e6e6fa" width="50%" height="1oo">
+            <tr align="center">
+                <th>起きる時間</th>
+                <th>寝る時間</th>
+            </tr>
+            <tr align="center">
+                <td>07:00</td>
+                <td>23:00</td>
+            </tr>
+            <tr align="left">
+                <td colspan="2">
+                ・元気に遊ぶこと（不純異性交遊は禁止）<br>
+                ・睡眠は重要！！（寝酒はおすすめできません）<br>
+                ・お小遣いは計画的にご利用を・・・（臨時収入は見込めませんよ）<br>
+                ・宿題は決して手伝いません。（すでに当てにしていたのなら残念でした）
+                </td>
+            </tr>
+        </table>
+    </div>
+
         <h2>GitとGitHubとの違いとは？</h2>
         <p><ul><li>Gitは「プログラム」、GitHubは「Gitを用いたサービス」のひとつ</li>
             <li>GitHubは、Gitを用いたソフトウェア開発プロジェクトのための共有サービス</li></ul></p>
@@ -28,6 +52,23 @@
         <strong>rm ファイル・ディレクトリ名：</strong>ファイル、ディレクトリを削除する</p>
         <strong>explorer パス：</strong>指定した階層をエクスプローラーで表示する</p>
         <strong>vim ファイル名：</strong>ファイルの中身を編集する</p>
+
+        <h3>クローンについてHELP！！</h3>
+        <p>URLの取得から躓きました。まぐれでここにたどり着いてます。だれかクローンってどうすればいいか詳細ください！</p>
+            <p>この文書は後で画面を綺麗にするために削除します！</p>
+
+    </div>
+    <div>
+        <label id="checkboxArat"><p>長谷川ボタン<input type="checkbox"></p></label>
+    </div>
+    <script>
+        let checkboxArat = document.querySelector('#checkboxArat');
+        checkboxArat.addEventListener("click", function(){
+            alert("長谷川がいる");
+        })
+    </script>
+    <div class="img-c">
+        <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5" target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px" height="210px"></a>
     </div>
     <div class="section">
         <table>
@@ -59,6 +100,7 @@
             table{
                 border-collapse: collapse;
                 border: solid 1px #3e15f4;
+                width: 100px;
             }
         </style>
     </div>
