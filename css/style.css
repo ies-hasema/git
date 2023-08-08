@@ -209,12 +209,13 @@ textarea {
 }
 /* 「お問い合わせ」ページ ここまで↑ */
 
-/* ゲーミングブライダル */
-
-#fair{
-	background-color: rgb(20, 20, 20);
-	color: #ffffff;
+#monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 .gaming,
 .gaming_box {
@@ -235,3 +236,15 @@ textarea {
 }
 
 /* ゲーミングブライダル ここまで*/
+
+.monbran{
+	font-size: 30px;
+	font-weight: bold;
+	color: #342300;
+}
+=======
+>>>>>>> master
+=======
+
+/* ゲーミングブライダル ここまで*/
+>>>>>>> 7925ffdc2278c092d17fd37a765ab2cf66ad2a6b
