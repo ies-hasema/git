@@ -109,11 +109,11 @@
                             function sleep(waitMsec) {
                                 var startMsec = new Date();
 
-                                // 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
-                                while (new Date() - startMsec < waitMsec);
-                            }
-                            let y = 0, x = 0;
-                            let img = document.querySelector('#gameMain img');
+                    // 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
+                    while (new Date() - startMsec < waitMsec);
+                }
+                let y = 0, x = 0;
+                let img2 = document.querySelector('#gameMain img');
 
 
                             checkboxArat.addEventListener("click", function () {
@@ -239,82 +239,74 @@
                         <button id="btn">CLICK</button>
                     </div>
 
-                    <script>
-                        let text = document.getElementById("text");
-                        let btn = document.getElementById("btn");
-                        let img = document.getElementById("img");
-                        btn.addEventListener('click', () => {
-                            text.textContent = '台風が来ます';
-                            text.setAttribute('style', 'color : red;');
-                            img.setAttribute('src', './images/typhoon.png');
-                        });
-                    </script>
-                    <div class="img-c">
-                        <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5"
-                            target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt=""
-                                width="360px" height="210px"></a>
-                        <h2>HTML・CSSの勉強におすすめなサイト</h2>
-                        <p><a href="https://dubdesign.net/download/html-css/htmlcss-loading8/"
-                                rel="nofollow">⇒アニメーションローディングはこちら</a></p>
-                    </div>
-                    <div class="sectionmiyu">
-                        <table id="kinou">
-                            <thead>
-                                <tr>
-                                    <th colspan="2">便利な機能</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>戻る</th>
-                                    <td>ctrl + z</td>
-                                </tr>
-                                <tr>
-                                    <th>戻りすぎたのを進む</th>
-                                    <td>ctrl + z + shift</td>
-                                </tr>
-                                <tr>
-                                    <th>複数行選択</th>
-                                    <td>shift + alt</td>
-                                </tr>
-                                <tr>
-                                    <th>表の枠線をつけるCSS<br>枠線を重ねて表示するCSS</th>
-                                    <td>border: 線の種類 太さ 色;<br>border-collapse: collapse;</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <style>
-                            #kinou th,
-                            #kinou td {
-                                border: dashed 1px #00090b;
-                            }
-
-                            #kinou {
-                                border-collapse: collapse;
-                                border: solid 1px #2d09f9;
-                                margin: 50px;
-                                background: linear-gradient(90deg, #b9e6f1, #f8ced5);
-                            }
-
-                            body {
-                                background: linear-gradient(1000deg, #ec9266, #a260bf);
-                            }
-
-                            .sectionmiyu,
-                            .img-c {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                margin: 50px auto;
-                            }
-                        </style>
-                    </div>
-                    <div class="section">
-                        <h2>JavaScript復習</h2>
-                        <img src="./images/job_otenki_oneesan.png" id="img">
-                        <p id="text">明日の福岡の天気は？</p>
-                        <button id="btn">CLICK</button>
-                    </div>
+        <script>
+            let text1 = document.getElementById("text");
+            let btn1 = document.getElementById("btn");
+            let img1 = document.getElementById("img");
+            btn.addEventListener('click', () => {
+                text.textContent = '台風が来ます';
+                text.setAttribute('style', 'color : red;');
+                img.setAttribute('src', './images/typhoon.png');
+            });
+        </script>
+    <div class="img-c">
+        <a href="https://www.google.com/search?q=%E3%83%81%E3%83%B3%E3%83%81%E3%83%A9&rlz=1C1JCYX_jaJP1062JP1062&tbm=isch&sxsrf=AB5stBjK4hfYLrkxXuRuIxbF2kUOJpsg0w:1691459791564&source=lnms&sa=X&ved=2ahUKEwinq5zg-suAAxVPCYgKHVhrAQwQ0pQJegQIAhAE&biw=1280&bih=571&dpr=1.5" target="_blank"><img src="images/img_420fe4421639bfdf6dcdd5bc1291207c139407.jpg" alt="" width="360px" height="210px"></a>
+        <h2>HTML・CSSの勉強におすすめなサイト</h2>
+        <p><a href="https://dubdesign.net/download/html-css/htmlcss-loading8/" rel="nofollow">⇒アニメーションローディングはこちら</a></p>
+    </div>
+    <div class="sectionmiyu">
+        <table id="kinou">
+            <thead>
+                <tr>
+                    <th colspan="2">便利な機能</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>戻る</th>
+                    <td>ctrl + z</td>
+                </tr>
+                <tr>
+                    <th>戻りすぎたのを進む</th>
+                    <td>ctrl + z + shift</td>
+                </tr>
+                <tr>
+                    <th>複数行選択</th>
+                    <td>shift + alt</td>
+                </tr>
+                <tr>
+                    <th>表の枠線をつけるCSS<br>枠線を重ねて表示するCSS</th>
+                    <td>border: 線の種類 太さ 色;<br>border-collapse: collapse;</td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #kinou th,#kinou td{
+                border: dashed 1px #00090b;
+            }
+            #kinou{
+                border-collapse: collapse;
+                border: solid 1px #2d09f9;
+                margin: 50px;
+                background: linear-gradient(90deg,#b9e6f1,#f8ced5);
+            }
+            body{
+                background: linear-gradient(1000deg,#ec9266,#a260bf);
+            }
+            .sectionmiyu,.img-c{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:50px auto;
+            }
+        </style>
+    </div>
+    <div class="section">
+        <h2>JavaScript復習</h2>
+        <img src="./images/job_otenki_oneesan.png" id="img">
+        <p id="text">明日の福岡の天気は？</p>
+        <button id="btn">CLICK</button>
+    </div>
 
                     <script>
                         let text = document.getElementById("text");
