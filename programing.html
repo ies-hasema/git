@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="/css/programing.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="programing.css">
-    <link rel="stylesheet" href="/css/programing.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="programing.css">
     <link rel="stylesheet" href="./stylesheet.css">
 </head>
 
@@ -67,13 +64,11 @@
     <!--section2ここから↓--------------------------------------------------------------------------------->
     <h1>section2</h1>
     <div id="section_main">
-        <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>    
+        <h1 id="check">ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>    
         <script>
+            let checkboxArat = document.querySelector('#check')
             checkboxArat.addEventListener("click", function(){
                 alert("長谷川がいる");
-            })
-            checkboxArat2.addEventListener("click", function(){
-                location.href = "https://www.misterdonut.jp/";
             })
         </script>
         <div class="img-c">
@@ -179,7 +174,7 @@
 
 
     <!--section5ここから↓----------------------------------------------------------------------------------->
-    <h1>section5</h1>
+    <h1 id="section">section5</h1>
     <div id="section_main">
         <div class="wrapper">
             <div class="wrapper-button">
@@ -194,9 +189,17 @@
     </div>
     <!--section5ここまで↑---------------------------------------------------------------------------------->
 
+    <!--
+        <この中に作っていけばきれいになるはずです>
 
+        ------------コピー用----------------
 
-
+                <div id="section_main">
+                
+                </div>
+        
+        -------------------------------------
+    -->
 </body>
 
 </html>
