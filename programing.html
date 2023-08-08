@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プログラミング復習ページ</title>
+    <title>プログラミング復習ページ（テスト変更）</title>
+    <link rel="stylesheet" href="programing.css">
 </head>
 <body>
     <h1>ここに過去に習ったプログラミングの知識をとりためていきましょう。</h1>
     <div class="section">
-        <h2>タイトル</h2>
-        <p>文章文章文章文章文章文章文章文章文章文章文章文章</p>
+        <h2>長谷川ボタン</h2>
+        <button type="btn"><a href="#">はっせボタン</a></button>
     </div>
     <div class="section">
         <h2>ドキドキわくわく夏休み</h2>
@@ -34,5 +35,31 @@
         </table>
     </div>
 
+        <h2>GitとGitHubとの違いとは？</h2>
+        <p><ul><li>Gitは「プログラム」、GitHubは「Gitを用いたサービス」のひとつ</li>
+            <li>GitHubは、Gitを用いたソフトウェア開発プロジェクトのための共有サービス</li></ul></p>
+    </div>
+    <div class="section" style="background-color: lightcyan; border: 1px solid black; padding: 20px; display: inline-block;">
+        <h2 style="border-bottom: 3px solid lightgray;">コマンドライン</h2>
+        <p><strong>pwd：</strong>現在のディレクトリを表示</p>
+        <strong>ls：</strong>フォルダの中を見る</p>
+        <strong>ls -al：</strong>隠しファイルなどもすべて見る</p>
+        <strong>cd：</strong>ディレクトリを移動する</p>
+        <strong>cd ../：</strong>階層をひとつ上る</p>
+        <strong>touch ファイル名：</strong>ファイルを作る</p>
+        <strong>mkdir ディレクトリ名：</strong>ディレクトリを作成する</p>
+        <strong>rm ファイル・ディレクトリ名：</strong>ファイル、ディレクトリを削除する</p>
+        <strong>explorer パス：</strong>指定した階層をエクスプローラーで表示する</p>
+        <strong>vim ファイル名：</strong>ファイルの中身を編集する</p>
+    </div>
+    <div>
+        <label id="checkboxArat"><p>長谷川ボタン<input type="checkbox"></p></label>
+    </div>
+    <script>
+        let checkboxArat = document.querySelector('#checkboxArat');
+        checkboxArat.addEventListener("click", function(){
+            alert("長谷川がいる");
+        })
+    </script>
 </body>
 </html>
