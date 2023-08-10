@@ -1,15 +1,20 @@
 @charset "utf-8";
-
-
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&family=Handjet:wght@300&display=swap');
 
+
+body {
+    color: #FFF!important;
+    font-size: 16px!important;
+    font-family: 'Chokokutai', cursive!important;
+}
 
 .section___ms {
     margin: 0 auto;
     height: 10rem;
 }
 
-.section___ms h2 {
+/* .section___ms h2 {
     border-left: 5px solid #fc3003;
     color: #333;
     font-size: 24px;
@@ -18,7 +23,7 @@
     font-weight: 300;
     font-family: 'Handjet', cursive;
 
-}
+} */
 
 button {
     position: relative;
@@ -45,6 +50,7 @@ button:active {
 #button {
     font-family: 'Handjet', cursive;
 }
+
 body {
     width: 1200px;
     margin: 0 auto;
